@@ -1,0 +1,217 @@
+body {
+	color: rgb(121, 121, 121);
+	font-family: sans-serif;
+	background-color: rgb(5, 5, 5);
+
+	position: relative;
+}
+.center-page-content {
+	max-width: 80vw;
+	margin-left: auto;
+	margin-right: auto; /* this means that the browser should 
+	set same margin size on left and right*/
+	position: relative;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+h1 {
+	font-size: 26px;
+	text-transform: uppercase;
+	font-style: italic;
+}
+h1::first-letter {
+	font-style: normal;
+	margin-right: 5px;
+}
+/* is not a rule that h1 should be bigger than h2  */
+h2 {
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+h3 {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+h4 {
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+}
+p {
+	font-size: 22px;
+	line-height: 1.5; /* 1.5 of the font size */
+	margin-bottom: 10px;
+}
+nav {
+	text-align: center;
+}
+nav > a {
+	margin-right: 10px;
+}
+nav > a:last-child {
+	margin-right: 0px;
+}
+li:last-child {
+	margin-bottom: 0;
+}
+/* list selector */
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+	/* just for example  */
+}
+
+h1,
+h2,
+h3 {
+	color: #1098ad;
+}
+/* descendant selector */
+/* footer p {
+	font-size: 16px;
+} */
+/* article header p {
+	font-style: italic;
+} */
+article {
+	margin-bottom: 60px;
+}
+#author {
+	font-style: italic;
+	font-size: 18px;
+}
+#copyright {
+	font-size: 16px;
+}
+.related-author {
+	font-size: 18px;
+	font-weight: bold;
+}
+.related {
+	list-style: none;
+}
+.main-header {
+	background-color: #414141;
+	padding: 20px;
+	margin-bottom: 60px;
+	height: 80px;
+}
+.post-header {
+	margin-bottom: 30px;
+}
+aside {
+	background-color: #414141;
+	border-top: 5px double #1098ad; /* short hand property*/
+	border-bottom: 5px double #1098ad;
+	padding: 50px 5px;
+	margin-bottom: 20px;
+	max-width: 500px;
+}
+/* sudo class */
+li:first-child {
+	font-weight: bold;
+}
+li:last-child {
+	font-style: italic;
+}
+li:nth-child(odd) {
+	/* color: rebeccapurple; */
+}
+ul,
+ol {
+	margin-left: 50px;
+}
+
+/* this selector selects just that paragraphs that 
+are first element in the element where they are positioned
+eg : <div>
+        <p> i am selected</p>
+        <p> i am not</p>
+        <div>
+            <h2>..</h2>
+            <p> i am not selected</p>
+        </div>
+     </div>                         */
+p:first-child {
+	background-color: rgb(59, 33, 33);
+}
+
+/* style links */
+a:link {
+	/* this selector target all a elements that have a href attribute  */
+	color: #1098ad;
+	text-decoration: none;
+}
+
+a:visited {
+	/* color: #f7f7f7 */
+	color: #1098ad;
+}
+a:hover {
+	color: orangered;
+	font-weight: bold;
+	text-decoration: underline wavy orangered;
+}
+a:active {
+	background-color: rgb(50, 0, 25);
+}
+.post-img {
+	width: 100%;
+	/* height: auto; */
+}
+button {
+	cursor: pointer;
+	padding: 10px;
+	font-size: 20px;
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+}
+/*
+resolving css conflicts
+
+#copyright {
+	background-color: red;
+}
+.copyright {
+	background-color: blue;
+}
+.text {
+	background-color: yellow;
+}
+footer p {
+	background-color: green;
+} */
+
+/* sudo selectors  */
+/* p::first-line {
+	color: red;
+} */
+
+h3 + p::first-line {
+	/* + means the first sibling after h3 */
+	/* color: red; */
+}
+
+/* sudo element  */
+h2::after {
+	content: "TOP";
+	background-color: rgb(184, 181, 5);
+	font-size: 16px;
+	color: black;
+	font-weight: bold;
+	display: inline-block;
+	padding: 3px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+h2 {
+	/* background-color: orange; */
+	position: relative;
+}
