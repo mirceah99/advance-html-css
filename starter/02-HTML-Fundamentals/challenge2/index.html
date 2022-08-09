@@ -6,26 +6,43 @@
 		<link href="style.css" rel="stylesheet" />
 	</header>
 	<body>
-		<article class="product">
+		<article class="product sale">
 			<h2>Converse Chuck Taylor All Start Low Top</h2>
+			<!-- <div class="row"> -->
 			<img
+				class="col-1"
 				src="./img/challenges.jpg"
 				alt=" a pair of Converse "
 				width="250px"
 			/>
-			<p class="price"><strong>&#36;65.00</strong></p>
-			<p class="promotion">Fee shipping</p>
-			<p>
-				Ready to dress up or down, this classic canvas Chucks are an everyday
-				wardrobe staple.
-			</p>
-			<a href="#"> More information &rarr; </a>
-			<h3>Product details</h3>
-			<ul>
-				<li>Lightweight, durable canvas sneakers</li>
-				<li>Lightly padded footbed for added comfort</li>
-				<li>Iconic Chuck Taylor ankle patch.</li>
-			</ul>
+			<div class="col-2">
+				<div class="promo">
+					<p class="price float-left"><strong>&#36;65.00</strong></p>
+					<p class="promotion float-right">Free shipping</p>
+				</div>
+				<p class="float-clear">
+					Ready to dress up or down, this classic canvas Chucks are an everyday
+					wardrobe staple.
+				</p>
+				<a href="#"> More information &rarr; </a>
+				<div class="colors">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<div class="col-3">
+				<h3>Product details</h3>
+				<ul>
+					<li>Lightweight, durable canvas sneakers</li>
+					<li>Lightly padded footbed for added comfort</li>
+					<li>Iconic Chuck Taylor ankle patch.</li>
+				</ul>
+			</div>
+			<!-- </div> -->
 			<button>Add to cart</button>
 		</article>
 	</body>
